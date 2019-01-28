@@ -1,18 +1,17 @@
 public class Lingkaran {
-    public final double pi = 3.14;
-    public int radius = 10;
-    public double Keliling;
+    private final double pi = 3.14;
+    private int radius;
+    private double keliling;
 
-    public static void main (String[] ghalmas) {
-        Lingkaran lingkaran = new Lingkaran();
-        lingkaran.hitungkeliling();
+    public void HitungKelilingLingkaran(){
+        this.keliling = 2 * pi * radius;
     }
 
-    public void hitungkeliling(){
-        Keliling = 2 * pi * radius;
+    public void setRadius(int radius){
+        this.radius = radius;
+    }
 
-        System.out.println("Radius Lingkaran = "+radius+" Cm");
-        System.out.println ("Keliling Lingkarang dengan radius "+radius+" Cm Adalah = "+Keliling+" Cm");
-
+    public double getKelilingLingkaran(){
+        return keliling;
     }
 }

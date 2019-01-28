@@ -1,16 +1,16 @@
 public class BujurSangkar {
-    public int sisi = 4;
-    public int keliling;
+    private int sisi;
+    private int keliling;
 
-    public static void main (String[] ghalmas){
-        BujurSangkar bujursangkar = new BujurSangkar();
-        bujursangkar.hitungkeliling();
+    public void hitungkelilingbujursangkar() {
+        this.keliling = 4 * sisi;
     }
 
-    public void hitungkeliling(){
-        keliling = 4*sisi;
+    public void setSisi(int sisi){
+        this.sisi=sisi;
+    }
 
-        System.out.println("Sisi BujurSangkar = "+sisi+" Cm");
-        System.out.println ("Keliling Bujur Sangkar dengan sisi "+sisi+"Cm Adalah = "+keliling);
+    public int getKelilingBujursangkar(){
+        return keliling;
     }
 }
